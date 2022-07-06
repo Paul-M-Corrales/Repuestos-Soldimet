@@ -1,0 +1,15 @@
+.ubicacion {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    flex-direction: column;
+    &_titulo{
+        padding-bottom: 30px;
+        font-family: 'Bebas Neue', cursive;
+        color: red;
+    }
+
+}
+iframe {
+    width: 1200px;
+}

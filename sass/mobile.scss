@@ -1,0 +1,38 @@
+@media screen and (max-width:1445px) {
+.logo{
+    width: 250px;
+}
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: 50px;
+    transform: none;
+    text-transform: uppercase;
+}
+.presentacion__titulo {
+    font-size: 25px;
+}
+.presentacion__viñetas {
+    font-size: 20px;
+}
+.carousel {
+   max-width: 100%;
+   transform: none;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #f7f4f3;
+    transform:none
+}
+.ubicacion_titulo {
+    padding-top: 40px;
+}
+iframe {
+    width: 300px;
+}
+.footer_informacion {
+    font-size: 12px;
+}
+}

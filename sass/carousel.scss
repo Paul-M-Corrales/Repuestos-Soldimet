@@ -1,0 +1,11 @@
+.carousel {
+    max-width: 50%;
+    transform: translateY(-85%);
+    
+
+&__img {
+    object-fit: contain;
+    height: 450px;
+    width: 100%;
+}
+}
