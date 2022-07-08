@@ -1,8 +1,8 @@
 .galeria {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background-color: #f7f4f3;
-    transform: translateY(-250px);
+    background-color: white;
+    
 
     &__item{
       margin-bottom: 10px;
@@ -15,4 +15,8 @@
       object-fit: contain;
     }
   
+}
+.gradiente_galeria{
+  height: 30px;
+  background-image: linear-gradient(white, black);
 }

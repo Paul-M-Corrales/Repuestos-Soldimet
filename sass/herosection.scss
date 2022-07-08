@@ -1,0 +1,70 @@
+.hero{    
+    height: 75vh;
+    background-color: black;    
+    
+     
+   
+    &_div{
+        width: 60%;
+        height: 75vh;
+        background-image: url(../img/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+
+    }
+
+     .div_encabezado {
+    transform: translateX(105%);
+    text-transform: uppercase;
+  
+      .div_titulo {
+        padding-top: 30px;
+          font-size: 45px;
+          color: rgb(152, 133, 26);
+          font-family: 'Bebas Neue', cursive;       
+  
+          animation: bounce;
+          /* referring directly to the animation's @keyframe declaration */
+          animation-duration: 2s;
+          /* don't forget to set a duration! */
+      }
+  
+      .div_viñetas {
+          padding-top: 30px;
+          font-size: 30px;
+          font-family: 'Bebas Neue', cursive;
+          color: white;
+      }
+  }
+}
+  .viñeta1{
+      -webkit-animation: slide-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: slide-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                
+              @-webkit-keyframes slide-tr {
+                  0% {
+                    -webkit-transform: translateY(0) translateX(0);
+                            transform: translateY(0) translateX(0);
+                  }
+                  100% {
+                    -webkit-transform: translateY(-100px) translateX(100px);
+                            transform: translateY(-100px) translateX(100px);
+                  }
+                }
+                @keyframes slide-tr {
+                  0% {
+                    -webkit-transform: translateY(0) translateX(0);
+                            transform: translateY(0) translateX(0);
+                  }
+                  100% {
+                    -webkit-transform: translateY(-100px) translateX(100px);
+                            transform: translateY(-100px) translateX(100px);
+      }
+    }
+    
+      }
+    .gradiente{
+        height: 50px;
+        background-image: linear-gradient(black, white);
+    }

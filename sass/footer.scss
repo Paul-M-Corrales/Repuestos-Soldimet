@@ -4,7 +4,7 @@ footer{
 .footer_informacion{
   display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    background-color: lightgrey; 
+    background-color: white; 
     font-family: 'Bebas Neue', cursive;
     
 }
@@ -31,7 +31,7 @@ footer{
     
     &_a{
       margin: 1rem;
-      color: white;
+      color:  white;
       text-decoration: none;
       
     }

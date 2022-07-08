@@ -1,11 +1,16 @@
 .carousel {
-    max-width: 50%;
-    transform: translateY(-85%);
-    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: black;    
 
 &__img {
-    object-fit: contain;
-    height: 450px;
-    width: 100%;
+    width: 800px;
+    object-fit: cover;
 }
+}
+.gradiente_carousel{
+    height: 50px;
+    background-image: linear-gradient(black,#03045e);
 }

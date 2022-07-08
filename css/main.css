@@ -7,76 +7,37 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh; }
-
-main {
-  background: linear-gradient(to right, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=1 ); }
+  height: 100vh;
+  padding-left: 5px;
+  padding-right: 5px; }
 
 .div_logo {
-  background-color: #181abd;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background-color: black;
+  background-image: linear-gradient(#03045e, black); }
 
 .logo {
-  width: 450px; }
+  width: 350px; }
 
 .carousel {
-  max-width: 50%;
-  transform: translateY(-85%); }
-  .carousel__img {
-    object-fit: contain;
-    height: 450px;
-    width: 100%; }
-
-.presentacion {
-  display: flex;
-  flex-direction: column;
-  max-width: 50%;
   padding-top: 50px;
-  transform: translateX(110%);
-  text-transform: uppercase; }
-  .presentacion__titulo {
-    font-size: 45px;
-    color: #98851a;
-    font-family: 'Bebas Neue', cursive;
-    display: inline-block;
-    margin: 0 0.5rem;
-    animation: bounce;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
-    /* don't forget to set a duration! */ }
-  .presentacion__viñetas {
-    padding-top: 30px;
-    font-size: 30px;
-    font-family: 'Bebas Neue', cursive;
-    color: #181abd; }
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: black; }
+  .carousel__img {
+    width: 800px;
+    object-fit: cover; }
 
-.viñeta1 {
-  -webkit-animation: slide-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-@-webkit-keyframes slide-tr {
-  0% {
-    -webkit-transform: translateY(0) translateX(0);
-    transform: translateY(0) translateX(0); }
-  100% {
-    -webkit-transform: translateY(-100px) translateX(100px);
-    transform: translateY(-100px) translateX(100px); } }
-
-@keyframes slide-tr {
-  0% {
-    -webkit-transform: translateY(0) translateX(0);
-    transform: translateY(0) translateX(0); }
-  100% {
-    -webkit-transform: translateY(-100px) translateX(100px);
-    transform: translateY(-100px) translateX(100px); } }
+.gradiente_carousel {
+  height: 50px;
+  background-image: linear-gradient(black, #03045e); }
 
 .galeria {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  background-color: #f7f4f3;
-  transform: translateY(-250px); }
+  background-color: white; }
   .galeria__item {
     margin-bottom: 10px; }
   .galeria__img {
@@ -85,13 +46,17 @@ main {
     height: 100%;
     object-fit: contain; }
 
+.gradiente_galeria {
+  height: 30px;
+  background-image: linear-gradient(white, black); }
+
 footer {
   padding-top: 20px; }
 
 .footer_informacion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: lightgrey;
+  background-color: white;
   font-family: 'Bebas Neue', cursive; }
 
 .footer_enlaces {
@@ -122,40 +87,240 @@ footer {
   display: flex;
   align-items: center;
   padding-bottom: 100px;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #03045e; }
   .ubicacion_titulo {
-    padding-bottom: 30px;
-    font-family: 'Bebas Neue', cursive;
-    color: red; }
+    padding-bottom: 50px;
+    font-size: 50px;
+    color: goldenrod;
+    font-family: 'Bebas Neue', cursive; }
 
 iframe {
   width: 1200px; }
 
-@media screen and (max-width: 1445px) {
-  .logo {
-    width: 250px; }
-  .presentacion {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding-top: 50px;
-    transform: none;
+.hero {
+  height: 75vh;
+  background-color: black; }
+  .hero_div {
+    width: 60%;
+    height: 75vh;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover; }
+  .hero .div_encabezado {
+    transform: translateX(105%);
     text-transform: uppercase; }
-  .presentacion__titulo {
-    font-size: 25px; }
-  .presentacion__viñetas {
+    .hero .div_encabezado .div_titulo {
+      padding-top: 30px;
+      font-size: 45px;
+      color: #98851a;
+      font-family: 'Bebas Neue', cursive;
+      animation: bounce;
+      /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s;
+      /* don't forget to set a duration! */ }
+    .hero .div_encabezado .div_viñetas {
+      padding-top: 30px;
+      font-size: 30px;
+      font-family: 'Bebas Neue', cursive;
+      color: white; }
+
+.viñeta1 {
+  -webkit-animation: slide-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0); }
+  100% {
+    -webkit-transform: translateY(-100px) translateX(100px);
+    transform: translateY(-100px) translateX(100px); } }
+
+@keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0); }
+  100% {
+    -webkit-transform: translateY(-100px) translateX(100px);
+    transform: translateY(-100px) translateX(100px); } }
+
+.gradiente {
+  height: 50px;
+  background-image: linear-gradient(black, white); }
+
+.link {
+  text-decoration: none; }
+
+.juntas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/juntas.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod; }
+
+.repuesto {
+  font-size: 60px;
+  font-family: 'Bebas Neue', cursive;
+  color: white; }
+
+.tornillos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/tornillos.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 600px;
+  object-fit: cover; }
+
+.conjunto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/subconjunto.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod; }
+
+.cojinetes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/cojinetes.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod; }
+
+.valvulas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/valvulas.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 600px; }
+
+.guias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/guias.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 300px; }
+
+.casquillos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/casquillos.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 400px; }
+
+.levas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/levas.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 300px; }
+
+.retenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/retenes.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 200px; }
+
+.juntas:hover {
+  transform: translateY(-5%); }
+
+.tornillos:hover {
+  transform: translateY(-5%); }
+
+.conjunto:hover {
+  transform: translateY(-5%); }
+
+.cojinetes:hover {
+  transform: translateY(-5%); }
+
+.valvulas:hover {
+  transform: translateY(-5%); }
+
+.guias:hover {
+  transform: translateY(-5%); }
+
+.casquillos:hover {
+  transform: translateY(-5%); }
+
+.levas:hover {
+  transform: translateY(-5%); }
+
+.retenes:hover {
+  transform: translateY(-5%); }
+
+@media screen and (max-width: 426px) {
+  .div_logo {
+    padding-left: 30px;
+    display: block; }
+  .logo {
+    width: 200px; }
+  .hero_div {
+    width: 100%;
+    background-size: contain; }
+  .hero .div_encabezado {
+    transform: translatey(70%); }
+  .hero .div_encabezado .div_titulo {
+    padding-left: 15px;
     font-size: 20px; }
+  .hero .div_encabezado .div_viñetas {
+    padding-top: 10px;
+    font-size: 13px; }
+  .repuesto {
+    font-size: 17px; }
+  .juntas {
+    background-size: contain; }
   .carousel {
-    max-width: 100%;
-    transform: none; }
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    background-color: #f7f4f3;
-    transform: none; }
-  .ubicacion_titulo {
-    padding-top: 40px; }
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .carousel__img {
+    width: 280px;
+    object-fit: cover; }
   iframe {
     width: 300px; }
   .footer_informacion {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .ubicacion_titulo {
+    font-size: 30px; } }
