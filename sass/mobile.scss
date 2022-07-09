@@ -8,21 +8,23 @@
     width: 200px;
 }
 .hero_div {
-    height: 220px;
     width: 100%;
     background-size: contain;
 }
 .hero .div_encabezado {
+    display: flex;
+    flex-direction: column;
     transform: translatey(65%);
 }
 
 .hero .div_encabezado .div_titulo {
     padding-left: 15px;
-    font-size: 25px;
+    padding-right: 15px;
+    font-size: 35px;
 }
 .hero .div_encabezado .div_viñetas {
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 18px;
 }
 .repuesto{
     font-size: 17px;
