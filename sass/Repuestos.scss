@@ -1,145 +1,143 @@
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
-.juntas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background-position: center;
-    background-image: url(../img/juntas.jpg);
-    background-repeat: no-repeat;
-    background-color: black;
-    border: solid 3px goldenrod;
-}
-
-.repuesto{
-    font-size: 60px;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
+.juntas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/juntas.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
 }
 
-.tornillos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background-position: center;
-    background-image: url(../img/tornillos.jpg);
-    background-repeat: no-repeat;
-    background-color: black;
-    border: solid 3px goldenrod;
-    background-size: 600px;
-    object-fit: cover;
-}
-.conjunto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background-position: center;
-    background-image: url(../img/subconjunto.jpg);
-    background-repeat: no-repeat;
-    background-color: black;
-    border: solid 3px goldenrod;
-}
-.cojinetes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background-position: center;
-    background-image: url(../img/cojinetes.jpg);
-    background-repeat: no-repeat;
-    background-color: black;
-    border: solid 3px goldenrod;
-}
-.valvulas{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
-        background-position: center;
-        background-image: url(../img/valvulas.jpg);
-        background-repeat: no-repeat;
-        background-color: black;
-        border: solid 3px goldenrod;
-        background-size: 600px;
-    }
-.guias{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
-        background-position: center;
-        background-image: url(../img/guias.jpg);
-        background-repeat: no-repeat;
-        background-color: black;
-        border: solid 3px goldenrod;
-        background-size: 300px;
-    }
-.casquillos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background-position: center;
-    background-image: url(../img/casquillos.jpg);
-    background-repeat: no-repeat;
-    background-color: black;
-    border: solid 3px goldenrod;
-    background-size: 400px;
-}
-.levas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background-position: center;
-    background-image: url(../img/levas.jpg);
-    background-repeat: no-repeat;
-    background-color: black;
-    border: solid 3px goldenrod;
-    background-size: 300px;
-}
-.retenes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background-position: center;
-    background-image: url(../img/retenes.jpg);
-    background-repeat: no-repeat;
-    background-color: black;
-    border: solid 3px goldenrod;
-    background-size: 200px;
-}
-.juntas:hover{
-    transform: translateY(-5%);
-}
-.tornillos:hover{
-    transform: translateY(-5%);
-}
-.conjunto:hover{
-     transform: translateY(-5%);
-}
-.cojinetes:hover{
-    transform: translateY(-5%);
-    }
-.valvulas:hover{
-    transform: translateY(-5%);
-}
-.guias:hover{
-    transform: translateY(-5%);
-    }
-.casquillos:hover{
-    transform: translateY(-5%);
-}
-.levas:hover{
-    transform: translateY(-5%);
-    }
-.retenes:hover{
-    transform: translateY(-5%);
+.repuesto {
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  color: white;
 }
 
-   
+.tornillos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/tornillos.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 600px;
+  object-fit: cover;
+}
+.conjunto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/subconjunto.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+}
+.cojinetes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/cojinetes.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+}
+.valvulas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/valvulas.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 600px;
+}
+.guias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/guias.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 300px;
+}
+.casquillos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/casquillos.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 400px;
+}
+.levas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/levas.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 300px;
+}
+.retenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-position: center;
+  background-image: url(../img/retenes.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  border: solid 3px goldenrod;
+  background-size: 200px;
+}
+.juntas:hover {
+  transform: translateY(-5%);
+}
+.tornillos:hover {
+  transform: translateY(-5%);
+}
+.conjunto:hover {
+  transform: translateY(-5%);
+}
+.cojinetes:hover {
+  transform: translateY(-5%);
+}
+.valvulas:hover {
+  transform: translateY(-5%);
+}
+.guias:hover {
+  transform: translateY(-5%);
+}
+.casquillos:hover {
+  transform: translateY(-5%);
+}
+.levas:hover {
+  transform: translateY(-5%);
+}
+.retenes:hover {
+  transform: translateY(-5%);
+}

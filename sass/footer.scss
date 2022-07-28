@@ -1,39 +1,35 @@
-footer{
+footer {
   padding-top: 20px;
 }
-.footer_informacion{
+.footer_informacion {
   display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    background-color: white; 
-    font-family: 'Bebas Neue', cursive;
-    
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  font-family: "Bebas Neue", cursive;
 }
-.footer_enlaces{
+.footer_enlaces {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
   align-items: flex-end;
 }
-.enlace{
+.enlace {
   margin-top: 10px;
 }
-.footer_contacto{
+.footer_contacto {
   margin-left: 30px;
   font: 20px;
 }
 .iconos {
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    background-color: black;
-    padding-top: 10px;
-    
-    
-    &_a{
-      margin: 1rem;
-      color:  white;
-      text-decoration: none;
-      
-    }
-  
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  background-color: black;
+  padding-top: 10px;
+
+  &_a {
+    margin: 1rem;
+    color: white;
+    text-decoration: none;
   }
+}

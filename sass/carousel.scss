@@ -1,16 +1,16 @@
 .carousel {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    background-color: black;    
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
 
-&__img {
+  &__img {
     width: 800px;
     object-fit: cover;
+  }
 }
-}
-.gradiente_carousel{
-    height: 50px;
-    background-image: linear-gradient(black,#03045e);
+.gradiente_carousel {
+  height: 50px;
+  background-image: linear-gradient(black, #03045e);
 }
