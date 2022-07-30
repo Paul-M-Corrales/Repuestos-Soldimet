@@ -5,66 +5,141 @@ for (let i = numero; i <= 10; i++) {
     console.log ("Tu numero es: " + i);
 } */
 
-/* SIMULADOR INTERACTIVO */
+/* SIMULADOR INTERACTIVO*/
 
-const productos = [
-  { id: 1, nombre: "Juntas", precio: 6800 },
-  { id: 2, nombre: "Subconjunto", precio: 23600 },
-];
-let nombre = prompt(
-  "Hola, bienvenido a Soldimet Repuestos, por favor ingresa tu nombre"
-);
-let mail = prompt(
-  "Escribe tu direccion de mail"
-);
-alert("Bienvenido " + nombre + "!!");
-alert("Ops!! Tu compra excede de tu saldo")
-function eliminar() {
-  let salida = "Que producto deseas eliminar de tu carrito??\n\n";
-  for (const producto of productos) {
-    salida +=
-      producto.id + "-" + producto.nombre + " $" + producto.precio + "\n";
-  }
-  let eliminar = prompt(salida);
-  if (eliminar == 1) {
-   productos.shift();
-    alert("su producto fue eliminado");
-  } else if (eliminar == 2) {
-    productos.pop();
-    alert("su producto fue eliminado");
-  }
-  for (const elemento of productos){
-    alert("Tu item es: " + elemento.nombre + "\n" + "Tu valor a pagar es: $ " + elemento.precio);
+// SIMULADOR DEL LADO DEL VENDEDOR
+const ProductosAvender = [];
 
-
-    alert (nombre + " Tu pedido se a realizado con exito!! La factura fue enviada a " + mail );
-    let compra = prompt("Como vas a pagar? debito o credito?");
-    let cuotas = "credito";
-    if (compra == "debito"){
-        return alert ("1 cuota de " + elemento.precio)
-    } else if ( compra == "credito"){
-         cuotas = parseInt(prompt("Indica la cantidad de cuotas, tienes para elegir entre 1, 3, 6, 9 o 12"));    
+function IngresarProductos() {
+  class producto {
+    constructor(id, nombre, precio, stock) {
+      this.id = id;
+      this.nombre = nombre;
+      this.precio = precio;
+      this.stock = stock;
     }
-    
-     switch (cuotas){
-        case cuotas = 1 :
-         alert ("tu pago es 1 cuota de " + elemento.precio);
-            break;
-            case cuotas = 3 :
-         alert ("tu pago es 3 cuota de " + (elemento.precio / 3) ) ;
-            break;
-            case cuotas = 6:
-            alert ("tu pago es 6 cuota de " + (elemento.precio / 6) );
-            break;
-            case cuotas = 9:
-            alert ("tu pago es 9 cuota de " + (elemento.precio / 9) );
-            break;
-            case cuotas = 12:
-            alert ("tu pago es 12 cuota de " + (elemento.precio / 12) );
-            break;
+  }
 
-    }
+  let cargarproductos = parseInt(
+    prompt(
+      "BIENVENIDO SEÑOR ADMINISTRADOR!! \n " +
+        "A continuacion usted podra cargar los productos que desea vender \n" +
+        "Cuantos productos desea agregar a su programa??"
+    )
+  );
+  for (let i = 0; i < cargarproductos; i++) {
+    let id_art = prompt("Ingrese (ID) numero de identificacion del producto");
+    let nombre_art = prompt("Ingrese el nombre del producto a agregar");
+    let precio_art = prompt("Ingrese el precio del producto agregado");
+    let stock_art = prompt("Ingrese el stock del producto agregado");
+
+    const newproducto = new producto(id_art, nombre_art, precio_art, stock_art);
+    ProductosAvender.push(newproducto);
+    console.log(ProductosAvender);
+  }
+  alert(
+    "Se a realizado con exito la carga de productos. A continuacion le daremos inicio al programa de venta"
+  );
+}
+
+// SIMULADOR DEL LADO DEL COMPRADOR
+
+class item {
+  constructor(elemento) {
+    this.id = elemento.id;
+    this.nombre = elemento.nombre;
+    this.precio = elemento.precio;
   }
 }
-  eliminar();
+const carrito = [];
 
+function CargarEnCarrito(item) {
+  carrito.push(item);
+}
+function BuscarProducto(id) {
+  return ProductosAvender.find((elemento) => elemento.id == id);
+}
+
+function Agregar() {
+  let nombre = prompt(
+    "Hola, bienvenido a Soldimet Repuestos, por favor ingresa tu nombre"
+  );
+
+  let mail = prompt("Escribe tu Email");
+
+  alert("Bienvenido " + nombre + "!!");
+  let salida =
+    "Elige el numero del producto deseado. Cancelar para salir: \n\n";
+  for (let item of ProductosAvender) {
+    salida += item.id + "=>" + item.nombre + "  $" + item.precio + "\n";
+  }
+  let id_item = 0;
+
+  while (id_item != null) {
+    let id_item = prompt(salida);
+
+    if (id_item != null) {
+      id_item = parseInt(id_item);
+    } else {
+      break;
+    }
+
+    let producto = BuscarProducto(id_item);
+    console.log(producto);
+    CargarEnCarrito(producto);
+  }
+  let pago = "Los productos elegidos son : \n\n";
+  let total = 0;
+  for (let producto_carrito of carrito) {
+    let producto = new item(producto_carrito);
+    total += parseInt(producto.precio);
+    pago +=
+      producto_carrito.id +
+      "=>" +
+      producto_carrito.nombre +
+      "  $" +
+      producto_carrito.precio +
+      "\n";
+    alert(pago);
+  }
+  alert(
+    nombre +
+      " Tu pedido se a realizado con exito!! La factura fue enviada a " +
+      mail +
+      " Tu total a pagar es de $ " +
+      total +
+      " IVA inluido"
+  );
+
+  let compra = prompt("Como vas a pagar? debito o credito?");
+  let cuotas = "credito";
+  if (compra == "debito") {
+    return alert("1 cuota de " + total);
+  } else if (compra == "credito") {
+    cuotas = parseInt(
+      prompt(
+        "Indica la cantidad de cuotas, tienes para elegir entre 1, 3, 6, 9 o 12"
+      )
+    );
+  }
+  switch (cuotas) {
+    case (cuotas = 1):
+      alert("tu pago es 1 cuota de " + total);
+      break;
+    case (cuotas = 3):
+      alert("tu pago es 3 cuota de " + total / 3);
+      break;
+    case (cuotas = 6):
+      alert("tu pago es 6 cuota de " + total / 6);
+      break;
+    case (cuotas = 9):
+      alert("tu pago es 9 cuota de " + total / 9);
+      break;
+    case (cuotas = 12):
+      alert("tu pago es 12 cuota de " + total / 12);
+      break;
+  }
+}
+
+IngresarProductos();
+Agregar();
