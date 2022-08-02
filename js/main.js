@@ -255,6 +255,5 @@ function Agregar() {
 }
 
 
-IngresarProductos();
 Agregar(); 
 
