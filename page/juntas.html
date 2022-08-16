@@ -16,7 +16,9 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
   <title>Juntas</title>
 </head>
-<nav class="navbar navbar-expand-lg bg-light">
+<body>
+<div class="container-grid">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a href="../index.html"> <img src="../img/Framesoldimet.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -29,15 +31,16 @@
           <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item dropdown">
+          
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Menu
           </a>
+          <div  class="titulo_pagina"><h1>JUNTAS</h1></div>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="./juntas.html">Juntas</a></li>
             <li><a class="dropdown-item" href="./cam-subc-conj.html">Camisas conjuntos y subconjuntos</a></li>
-            <li><a class="dropdown-item" href="./cojinetes.html">Cojintes y axiales</a></li>
-            <li><a class="dropdown-item" href="./aros.html">Aros</a></li>
+            <li><a class="dropdown-item" href="./cojinetes.html">Cojintes y axiales</a></li>            
             <li><a class="dropdown-item" href="./tornillos.html">Tornillos de tapas de cilindros</a></li>
             <li><a class="dropdown-item" href="./valvulas.html">Valvulas</a></li>
             <li><a class="dropdown-item" href="./casquillos.html">Casquillos</a></li>
@@ -51,32 +54,51 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <a href="./carrito.html" id="carrito" title="Carrito"></a> 
     </div>
   </div>
 </nav>
-<body>
-    <main>
-      <div id="productos"></div>
-      <div id="debito"><button type="button" class="btn btn-primary" >debito</button>
-      </div>
-      <div id="cuota1"><button type="button" class="btn btn-secondary">1 cuotas</button>
-      </div>
-      <div id="cuota3"><button type="button" class="btn btn-success">3 cuotas</button>
-      </div>
-      <div id="cuota6"><button type="button" class="btn btn-danger">6 cuotas</button>
-      </div>
-      <div id="cuota9"><button  type="button" class="btn btn-warning">9 cuotas</button>
-      </div>
-      <div id="cuota12"><button  type="button" class="btn btn-info">12 cuotas</button>
-      </div>
+
+    <main class="main">
+      <h1 class="juntas_titulo">Chevrolet</h1>
+     <div id="chevrolet" class="row"></div>
+     <h1 class="juntas_titulo">Citroen</h1>
+     <div id="citroen"  class="row"></div>
+     <h1 class="juntas_titulo">Fiat</h1>
+     <div id="fiat" class="row"></div>
+     <h1 class="juntas_titulo">Ford</h1>
+     <div id="ford" class="row"></div>
+     <h1 class="juntas_titulo">Honda</h1>
+     <div id="honda" class="row"></div>
+     <h1 class="juntas_titulo">Nissan</h1>
+     <div id="nissan" class="row"></div>
+     <h1 class="juntas_titulo">Peugeot</h1>
+     <div id="peugeot" class="row"></div>
+     <h1 class="juntas_titulo">Renault</h1>
+     <div id="renault" class="row"></div>
+     <h1 class="juntas_titulo">Toyota</h1>
+     <div id="toyota" class="row"></div>
+     <h1 class="juntas_titulo">Volkswagen</h1>
+     <div id="volkswagen" class="row"></div>
+
       
     </main>
+    <section class="sidebar">
 
-<footer>
+    <a class="sidebar__marcas" href="#chevrolet">Chevrolet</a>
+    <a class="sidebar__marcas" href="#citroen">Citroen</a>
+    <a class="sidebar__marcas" href="#fiat">Fiat</a>
+    <a class="sidebar__marcas" href="#ford">Ford</a>
+    <a class="sidebar__marcas" href="#honda">Honda</a>
+    <a class="sidebar__marcas" href="#nissan">Nissan</a>
+    <a class="sidebar__marcas" href="#peugeot">Peugeot</a> 
+    <a class="sidebar__marcas" href="#renault">Renault</a>
+    <a class="sidebar__marcas" href="#toyota">Toyota</a>
+    <a class="sidebar__marcas" href="#volkswagen">Volkswagen</a> 
+
+    </section>
+
+<footer class="footer">
     <div class="iconos">
       <a class="iconos_a" href=""><i class="fa-brands fa-instagram-square"></i></a>
       <a class="iconos_a" href=""><i class="fa-brands fa-twitter"></i></a>
@@ -86,10 +108,12 @@
 
     </div>
   </footer>
-
+</div>
 </body>
+
 <!-- JavaScript Bundle with Popper -->
 <script src="../js/main.js"></script>
+<script src="../js/juntas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 

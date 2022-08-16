@@ -64,3 +64,45 @@
   height: 50px;
   background-image: linear-gradient(black, white);
 }
+nav.navbar.navbar-expand-lg {
+  background-color: black;
+  background-image: linear-gradient(#03045e, black);
+    color: rgb(128, 111, 20);
+}
+a#navbarDropdown {
+  color: white;
+}
+ul.dropdown-menu.show {
+  background-color: black;
+  background-image: linear-gradient(black, #03045e);;
+}
+a.dropdown-item {
+  color: white;
+}
+.col-sm-4 {
+  padding-top: 20px;
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  display: flex;
+}
+.juntas_titulo{
+  margin-top: 20px;
+}
+.fa-solid, .fas {
+  margin-right: 100px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: white;
+  font-size: 20px;
+}
+.titulo_pagina{
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  width: 500px;
+  
+}
+.main_carrito{
+  color: white;
+  background-color: black;
+}
