@@ -6,6 +6,12 @@ const juntas_chevrolet = [
     { id: 5, nombre: "Corsa", precio: 3100, imagen: "logo_chevrolet.jpg" },
     { id: 6, nombre: "Vectra", precio: 3700, imagen: "logo_chevrolet.jpg" },
   ];
+
+  //desestructuracion de array
+  const [a,b,c,d,e,f] = juntas_chevrolet;
+  console.log(b); // corresponde al id:2
+  console.log(d); // corresponde al id:4
+
   const juntas_citroen = [
     { id: 7, nombre: "berlingo", precio: 3700, imagen: "logo citroen.png" },
     { id: 8, nombre: "c3", precio: 3200, imagen: "logo citroen.png" },
