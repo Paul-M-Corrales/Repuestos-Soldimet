@@ -166,7 +166,19 @@ function GuardarchevroletLS(juntas_chevrolet) {
 
 
   //carrito chevrolet
+  function AlertVacio(){
+    Swal.fire({
+      icon: 'info',
+      title: 'Oops...',
+      text: 'Tu carrito esta vacio!',
+    })
+  }
 
+  function VaciarCarritoChevrolet(){
+    localStorage.removeItem("carrito");
+    MostrarProductosCarrito();
+  ActualizarChevrolet();
+  }
 function GuardarChevroletCarrito(juntas_chevrolet) {
     localStorage.setItem("carrito", JSON.stringify(juntas_chevrolet));
   }
@@ -193,6 +205,11 @@ function GuardarChevroletCarrito(juntas_chevrolet) {
         objeto.cantidad = 1;
         productos_carrito.push(objeto);
      }   
+     Swal.fire({
+      icon: 'success',
+      title: 'Felicitaciones!!',
+      text: 'Producto agregado correctamente al carrito ',
+    })
     
     GuardarChevroletCarrito(productos_carrito);
     ActualizarChevrolet();
@@ -277,6 +294,11 @@ function GuardarChevroletCarrito(juntas_chevrolet) {
         objeto.cantidad = 1;
         productos_carrito.push(objeto);
      }
+     Swal.fire({
+      icon: 'success',
+      title: 'Felicitaciones!!',
+      text: 'Producto agregado correctamente al carrito ',
+    })
     GuardarCitroenCarrito(productos_carrito);
     ActualizarCitroen();
   }
@@ -313,6 +335,11 @@ function GuardarChevroletCarrito(juntas_chevrolet) {
        objeto.cantidad = 1;
        productos_carrito.push(objeto);
     } 
+    Swal.fire({
+      icon: 'success',
+      title: 'Felicitaciones!!',
+      text: 'Producto agregado correctamente al carrito ',
+    })
     GuardarFiatCarrito(productos_carrito);
     ActualizarFiat();
   }
@@ -349,6 +376,11 @@ function GuardarChevroletCarrito(juntas_chevrolet) {
        objeto.cantidad = 1;
        productos_carrito.push(objeto);
     } 
+    Swal.fire({
+      icon: 'success',
+      title: 'Felicitaciones!!',
+      text: 'Producto agregado correctamente al carrito ',
+    })
     GuardarFordCarrito(productos_carrito);
     ActualizarFord();
   }
@@ -385,6 +417,11 @@ function GuardarChevroletCarrito(juntas_chevrolet) {
        objeto.cantidad = 1;
        productos_carrito.push(objeto);
     } 
+    Swal.fire({
+      icon: 'success',
+      title: 'Felicitaciones!!',
+      text: 'Producto agregado correctamente al carrito ',
+    })
     GuardarHondaCarrito(productos_carrito);
     ActualizarHonda();
   }
@@ -421,6 +458,11 @@ function GuardarChevroletCarrito(juntas_chevrolet) {
        objeto.cantidad = 1;
        productos_carrito.push(objeto);
     } 
+    Swal.fire({
+      icon: 'success',
+      title: 'Felicitaciones!!',
+      text: 'Producto agregado correctamente al carrito ',
+    })
     GuardarNissanCarrito(productos_carrito);
     ActualizarNissan();
   }
@@ -457,6 +499,11 @@ function GuardarChevroletCarrito(juntas_chevrolet) {
        objeto.cantidad = 1;
        productos_carrito.push(objeto);
     } 
+    Swal.fire({
+      icon: 'success',
+      title: 'Felicitaciones!!',
+      text: 'Producto agregado correctamente al carrito ',
+    })
     GuardarPeugeotCarrito(productos_carrito);
     ActualizarPeugeot();
   }
@@ -493,6 +540,11 @@ function GuardarChevroletCarrito(juntas_chevrolet) {
        objeto.cantidad = 1;
        productos_carrito.push(objeto);
     } 
+    Swal.fire({
+      icon: 'success',
+      title: 'Felicitaciones!!',
+      text: 'Producto agregado correctamente al carrito ',
+    })
     GuardarRenaultCarrito(productos_carrito);
     ActualizarRenault();
   }
@@ -529,6 +581,11 @@ function GuardarChevroletCarrito(juntas_chevrolet) {
        objeto.cantidad = 1;
        productos_carrito.push(objeto);
     } 
+    Swal.fire({
+      icon: 'success',
+      title: 'Felicitaciones!!',
+      text: 'Producto agregado correctamente al carrito ',
+    })
     GuardarToyotaCarrito(productos_carrito);
     ActualizarToyota();
   }
@@ -565,6 +622,11 @@ function GuardarChevroletCarrito(juntas_chevrolet) {
        objeto.cantidad = 1;
        productos_carrito.push(objeto);
     } 
+    Swal.fire({
+      icon: 'success',
+      title: 'Felicitaciones!!',
+      text: 'Producto agregado correctamente al carrito ',
+    })
     GuardarVolkswagenCarrito(productos_carrito);
     ActualizarVolkswagen();
   }

@@ -1,14 +1,17 @@
 //Mostrar producto en html
-
   function MostrarProductosCarrito() {
     const carrito = CargarChevroletCarrito();
     let productos = "";
 
-    if(carrito.lenght == 0){
-        productos = `<div class="alert alert-success" role="alert"> CARRITO VACIO!</div>`
+    if(carrito.length == 0){
+        productos = AlertVacio();
 
     }else{
-        productos += `<table class="table table-dark table-hover">`;
+        productos +=`<table class="table table-dark table-hover">
+         <tr>
+        <td class="text-end" colspan="6"><button type="button" class="btn btn-light" onclick="VaciarCarritoChevrolet();">Vaciar Carrito<img src="../img/basura.jpg"height="25"></img></button>
+        </td>
+      </tr>`;
         carrito.forEach((elemento) => {
             productos += `<thead>
     <tr>
@@ -41,6 +44,10 @@ productos +=`<tr>
 <td></td>
 <th scope="col">Total a pagar</th>
 <td><b>$${SumatotalaPagar()}</b></td>
+</tr>
+<tr>
+<td class="text-end" colspan="6"><button type="button" class="btn btn-light" onclick="FinalizarPago();">Finalizar pago<img src="../img/pago.png"height="25"></img></button>
+</td>
 </tr>
 </table>`;
 
