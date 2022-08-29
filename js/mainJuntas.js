@@ -1,88 +1,82 @@
 const juntas_chevrolet = [
-    { id: 1, nombre: "Astra", precio: 3200, imagen: "logo_chevrolet.jpg" },
-    { id: 2, nombre: "Agile", precio: 3800, imagen: "logo_chevrolet.jpg" },
-    { id: 3, nombre: "Blazer", precio: 4600, imagen: "logo_chevrolet.jpg" },
-    { id: 4, nombre: "Captiva", precio: 4900, imagen: "logo_chevrolet.jpg" },
-    { id: 5, nombre: "Corsa", precio: 3100, imagen: "logo_chevrolet.jpg" },
-    { id: 6, nombre: "Vectra", precio: 3700, imagen: "logo_chevrolet.jpg" },
+    { id: 1, nombre: "Junta Astra", precio: 3200, imagen: "logo_chevrolet.jpg" },
+    { id: 2, nombre: "Junta Agile", precio: 3800, imagen: "logo_chevrolet.jpg" },
+    { id: 3, nombre: "Junta Blazer", precio: 4600, imagen: "logo_chevrolet.jpg" },
+    { id: 4, nombre: "Junta Captiva", precio: 4900, imagen: "logo_chevrolet.jpg" },
+    { id: 5, nombre: "Junta Corsa", precio: 3100, imagen: "logo_chevrolet.jpg" },
+    { id: 6, nombre: "Junta Vectra", precio: 3700, imagen: "logo_chevrolet.jpg" },
   ];
-
-  //desestructuracion de array
-  const [a,b,c,d,e,f] = juntas_chevrolet;
-  console.log(b); // corresponde al id:2
-  console.log(d); // corresponde al id:4
-
   const juntas_citroen = [
-    { id: 7, nombre: "berlingo", precio: 3700, imagen: "logo citroen.png" },
-    { id: 8, nombre: "c3", precio: 3200, imagen: "logo citroen.png" },
-    { id: 9, nombre: "c4", precio: 3800, imagen: "logo citroen.png" },
-    { id: 10, nombre: "c4 aircross", precio: 3100, imagen: "logo citroen.png" },
-    { id: 11, nombre: "cactus", precio: 4600, imagen: "logo citroen.png" },
-    { id: 12, nombre: "xsara picasso", precio: 4900, imagen: "logo citroen.png" },
+    { id: 7, nombre: "Junta berlingo", precio: 3700, imagen: "logo citroen.png" },
+    { id: 8, nombre: "Junta c3", precio: 3200, imagen: "logo citroen.png" },
+    { id: 9, nombre: "Junta c4", precio: 3800, imagen: "logo citroen.png" },
+    { id: 10, nombre: "Junta c4 aircross", precio: 3100, imagen: "logo citroen.png" },
+    { id: 11, nombre: "Junta cactus", precio: 4600, imagen: "logo citroen.png" },
+    { id: 12, nombre: "Junta xsara picasso", precio: 4900, imagen: "logo citroen.png" },
   ];
   const juntas_fiat = [
-    { id: 13, nombre: "128", precio: 3200, imagen: "logo fiat.jpg" },
-    { id: 14, nombre: "adventure", precio: 4900, imagen: "logo fiat.jpg" },
-    { id: 15, nombre: "duna", precio: 4600, imagen: "logo fiat.jpg" },
-    { id: 16, nombre: "fiorino", precio: 3100, imagen: "logo fiat.jpg" },
-    { id: 17, nombre: "toro", precio: 3700, imagen: "logo fiat.jpg" },
-    { id: 18, nombre: "uno", precio: 3800, imagen: "logo fiat.jpg" },
-  ];
-  const juntas_ford = [
-    { id: 19, nombre: "escort", precio: 3100, imagen: "logo ford.png" },
-    { id: 20, nombre: "fiesta", precio: 3200, imagen: "logo ford.png" },
-    { id: 21, nombre: "focus", precio: 3800, imagen: "logo ford.png" },
-    { id: 22, nombre: "ka", precio: 4600, imagen: "logo ford.png" },
-    { id: 23, nombre: "kuga", precio: 3700, imagen: "logo ford.png" },
-    { id: 24, nombre: "mondeo", precio: 4900, imagen: "logo ford.png" },
-  ];
+    { id: 13, nombre: "Junta 128", precio: 3200, imagen: "logo fiat.jpg" },
+    { id: 14, nombre: "Junta adventure", precio: 4900, imagen: "logo fiat.jpg" },
+    { id: 15, nombre: "Junta duna", precio: 4600, imagen: "logo fiat.jpg" },
+    { id: 16, nombre: "Junta fiorino", precio: 3100, imagen: "logo fiat.jpg" },
+    { id: 17, nombre: "Junta toro", precio: 3700, imagen: "logo fiat.jpg" },
+    { id: 18, nombre: "Junta uno", precio: 3800, imagen: "logo fiat.jpg" },
+  ]; 
+  const juntas_ford = [ 
+    { id: 19, nombre: "Junta escort", precio: 3100, imagen: "logo ford.png" },
+    { id: 20, nombre: "Junta fiesta", precio: 3200, imagen: "logo ford.png" },
+    { id: 21, nombre: "Junta focus", precio: 3800, imagen: "logo ford.png" },
+    { id: 22, nombre: "Junta ka", precio: 4600, imagen: "logo ford.png" },
+    { id: 23, nombre: "Junta kuga", precio: 3700, imagen: "logo ford.png" },
+    { id: 24, nombre: "Junta mondeo", precio: 4900, imagen: "logo ford.png" },
+  ]; 
   const juntas_honda = [
-    { id: 25, nombre: "accord", precio: 3200, imagen: "logo honda.jpg" },
-    { id: 26, nombre: "civic", precio: 3800, imagen: "logo honda.jpg" },
-    { id: 27, nombre: "crv", precio: 4600, imagen: "logo honda.jpg" },
-    { id: 28, nombre: "integra", precio: 4900, imagen: "logo honda.jpg" },
+    { id: 25, nombre: "Junta accord", precio: 3200, imagen: "logo honda.jpg" },
+    { id: 26, nombre: "Junta civic", precio: 3800, imagen: "logo honda.jpg" },
+    { id: 27, nombre: "Junta crv", precio: 4600, imagen: "logo honda.jpg" },
+    { id: 28, nombre: "Junta integra", precio: 4900, imagen: "logo honda.jpg" },
   ];
   const juntas_nissan = [
-    { id: 29, nombre: "frontier", precio: 3200, imagen: "logo nissan.jpg" },
-    { id: 30, nombre: "sentra", precio: 3800, imagen: "logo nissan.jpg" },
-    { id: 31, nombre: "serena", precio: 4600, imagen: "logo nissan.jpg" },
-    { id: 32, nombre: "tiida", precio: 4900, imagen: "logo nissan.jpg" },
-    { id: 33, nombre: "pathfinder", precio: 3100, imagen: "logo nissan.jpg" },
+    { id: 29, nombre: "Junta frontier", precio: 3200, imagen: "logo nissan.jpg" },
+    { id: 30, nombre: "Junta sentra", precio: 3800, imagen: "logo nissan.jpg" },
+    { id: 31, nombre: "Junta serena", precio: 4600, imagen: "logo nissan.jpg" },
+    { id: 32, nombre: "Junta tiida", precio: 4900, imagen: "logo nissan.jpg" },
+    { id: 33, nombre: "Junta pathfinder", precio: 3100, imagen: "logo nissan.jpg" },
   ];
   const juntas_peugeot = [
-    { id: 34, nombre: "106", precio: 3200, imagen: "logo peugeot.png" },
-    { id: 35, nombre: "205", precio: 3800, imagen: "logo peugeot.png" },
-    { id: 36, nombre: "206", precio: 4600, imagen: "logo peugeot.png" },
-    { id: 37, nombre: "207", precio: 4900, imagen: "logo peugeot.png" },
-    { id: 38, nombre: "2008", precio: 3100, imagen: "logo peugeot.png" },
-    { id: 39, nombre: "3008", precio: 3700, imagen: "logo peugeot.png" },
-  ];
+    { id: 34, nombre: "Junta 106", precio: 3200, imagen: "logo peugeot.png" },
+    { id: 35, nombre: "Junta 205", precio: 3800, imagen: "logo peugeot.png" },
+    { id: 36, nombre: "Junta 206", precio: 4600, imagen: "logo peugeot.png" },
+    { id: 37, nombre: "Junta 207", precio: 4900, imagen: "logo peugeot.png" },
+    { id: 38, nombre: "Junta 2008", precio: 3100, imagen: "logo peugeot.png" },
+    { id: 39, nombre: "Junta 3008", precio: 3700, imagen: "logo peugeot.png" },
+  ]; 
   const juntas_renault = [
-    { id: 40, nombre: "12", precio: 3200, imagen: "logo renault.jpg" },
-    { id: 41, nombre: "clio", precio: 3800, imagen: "logo renault.jpg" },
-    { id: 42, nombre: "duster", precio: 4600, imagen: "logo renault.jpg" },
-    { id: 43, nombre: "megane", precio: 4900, imagen: "logo renault.jpg" },
-    { id: 44, nombre: "sandero", precio: 3100, imagen: "logo renault.jpg" },
-    { id: 45, nombre: "twingo", precio: 3700, imagen: "logo renault.jpg" },
+    { id: 40, nombre: "Junta 12", precio: 3200, imagen: "logo renault.jpg" },
+    { id: 41, nombre: "Junta clio", precio: 3800, imagen: "logo renault.jpg" },
+    { id: 42, nombre: "Junta duster", precio: 4600, imagen: "logo renault.jpg" },
+    { id: 43, nombre: "Junta megane", precio: 4900, imagen: "logo renault.jpg" },
+    { id: 44, nombre: "Junta sandero", precio: 3100, imagen: "logo renault.jpg" },
+    { id: 45, nombre: "Junta twingo", precio: 3700, imagen: "logo renault.jpg" },
   ];
-  const juntas_toyota = [
-    { id: 46, nombre: "celica", precio: 3200, imagen: "logo toyota.jpg" },
-    { id: 47, nombre: "corolla", precio: 3800, imagen: "logo toyota.jpg" },
-    { id: 48, nombre: "cresida", precio: 4600, imagen: "logo toyota.jpg" },
-    { id: 49, nombre: "etios", precio: 4900, imagen: "logo toyota.jpg" },
-    { id: 50, nombre: "hilux", precio: 3100, imagen: "logo toyota.jpg" },
-    { id: 51, nombre: "landcrusier", precio: 3700, imagen: "logo toyota.jpg" },
+  const juntas_toyota =  [
+    { id: 46, nombre: "Junta celica", precio: 3200, imagen: "logo toyota.jpg" },
+    { id: 47, nombre: "Junta corolla", precio: 3800, imagen: "logo toyota.jpg" },
+    { id: 48, nombre: "Junta cresida", precio: 4600, imagen: "logo toyota.jpg" },
+    { id: 49, nombre: "Junta etios", precio: 4900, imagen: "logo toyota.jpg" },
+    { id: 50, nombre: "Junta hilux", precio: 3100, imagen: "logo toyota.jpg" },
+    { id: 51, nombre: "Junta landcrusier", precio: 3700, imagen: "logo toyota.jpg" },
   ];
   const juntas_volkswagen = [
-    { id: 52, nombre: "bora", precio: 3200, imagen: "logo volkswagen.jpg" },
-    { id: 53, nombre: "fox", precio: 3800, imagen: "logo volkswagen.jpg" },
-    { id: 54, nombre: "gacel", precio: 4600, imagen: "logo volkswagen.jpg" },
-    { id: 55, nombre: "gol", precio: 4900, imagen: "logo volkswagen.jpg" },
-    { id: 56, nombre: "golf", precio: 3100, imagen: "logo volkswagen.jpg" },
-    { id: 57, nombre: "Vento", precio: 3700, imagen: "logo volkswagen.jpg" },
+    { id: 52, nombre: "Junta bora", precio: 3200, imagen: "logo volkswagen.jpg" },
+    { id: 53, nombre: "Junta fox", precio: 3800, imagen: "logo volkswagen.jpg" },
+    { id: 54, nombre: "Junta gacel", precio: 4600, imagen: "logo volkswagen.jpg" },
+    { id: 55, nombre: "Junta gol", precio: 4900, imagen: "logo volkswagen.jpg" },
+    { id: 56, nombre: "Junta golf", precio: 3100, imagen: "logo volkswagen.jpg" },
+    { id: 57, nombre: "Junta Vento", precio: 3700, imagen: "logo volkswagen.jpg" },
   ];
 
-  //LocalStorage
+  //LocalStorage JUNTAS
 
 function GuardarchevroletLS(juntas_chevrolet) {
     localStorage.setItem("Juntas_chevrolet", JSON.stringify(juntas_chevrolet));
